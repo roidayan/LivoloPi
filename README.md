@@ -5,6 +5,8 @@ This is based [LivoloTx](https://github.com/bitlinker/LivoloTx) with modificatio
 
 # Remote IDs
 
+Info collected from [Arduino forum thread](https://forum.arduino.cc/index.php?topic=153525.0)
+
 Remote ID calculation:
 remoteID = 1 + N*3;
 
