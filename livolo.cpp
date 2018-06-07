@@ -17,8 +17,8 @@ void usage()
 {
 	printf("Arguments:\n");
 	printf("  -p <PIN>        - GPIO pin\n");
-	printf("  -r <REMOTE>     - Livolo remote id\n");
-	printf("  -b <BUTTON>     - Livolo button id\n");
+	printf("  -g <REMOTE>     - Livolo remote id\n");
+	printf("  -n <BUTTON>     - Livolo button id\n");
 }
 
 int main(int argc, char **argv)
@@ -28,15 +28,15 @@ int main(int argc, char **argv)
 	int remote = LIVOLO_REMOTE_ID;
 	int btn = LIVOLO_BTN;
 
-	while ((c = getopt(argc, argv, "p:r:b:h")) != -1) {
+	while ((c = getopt(argc, argv, "p:g:n:h")) != -1) {
 		switch (c) {
 			case 'p':
 				pin = atoi(optarg);
 				break;
-			case 'r':
+			case 'g':
 				remote = atoi(optarg);
 				break;
-			case 'b':
+			case 'n':
 				btn = atoi(optarg);
 				break;
 			case 'h':
